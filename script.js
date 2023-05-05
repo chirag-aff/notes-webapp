@@ -1,46 +1,3 @@
-// // Get references to HTML elements
-// const addNoteBtn = document.querySelector("#add-note-btn");
-// const notesList = document.querySelector("#notes-list");
-
-// // Function to create a new note element and add it to the DOM
-// function addNote() {
-//   // Create new list item and note div
-//   const noteItem = document.createElement("li");
-//   const noteDiv = document.createElement("div");
-//   noteDiv.classList.add("note");
-
-//   // Create title and content elements
-//   const titleInput = document.createElement("input");
-//   titleInput.type = "text";
-//   titleInput.classList.add("note-title");
-//   titleInput.placeholder = "Title";
-
-//   const contentInput = document.createElement("textarea");
-//   contentInput.classList.add("note-content");
-//   contentInput.placeholder = "Note content...";
-
-//   // Create delete button element
-//   const deleteBtn = document.createElement("button");
-//   deleteBtn.classList.add("delete-note-btn");
-//   deleteBtn.textContent = "Delete Note";
-
-//   // Append title, content, and delete button to note div
-//   noteDiv.appendChild(titleInput);
-//   noteDiv.appendChild(contentInput);
-//   noteDiv.appendChild(deleteBtn);
-
-//   // Append note div to list item and list item to notes list
-//   noteItem.appendChild(noteDiv);
-//   notesList.appendChild(noteItem);
-
-//   // Add event listener to delete button
-//   deleteBtn.addEventListener("click", () => {
-//     noteItem.remove();
-//   });
-// }
-
-// // Add event listener to add note button
-// addNoteBtn.addEventListener("click", addNote);
 const notesContainer = document.getElementById("app");
 const addNoteButton = notesContainer.querySelector(".add-note");
 
@@ -67,7 +24,7 @@ function createNoteElement(id, content) {
 
   element.classList.add("note");
   element.value = content;
-  element.placeholder = "Empty Sticky Note";
+  element.placeholder = "Enter the title";
 
   element.addEventListener("change", () => {
     updateNote(id, element.value);
