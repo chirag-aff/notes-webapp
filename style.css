@@ -1,96 +1,14 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
- body {
-    font-family: Arial, sans-serif;
-    background: #88ABFF;
-  }
 
-.wrapper{
-    margin:50px;
-    display:grid;
-    gap: 15px;
-    grid-template-columns: repeat(auto-fill,265px);
-}
-.wrapper li{
-    height: 250px;
-    list-style: none;
-    background: #fff;
-    border-radius: 5px;
-    padding: 15px 20px 20px;
-}
-.add-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-/* 
-  header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 1rem;
-  }
-  
-  header h1 {
-    margin: 0;
-  }
-  
-  main {
-    padding: 1rem;
-  }
-  
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .note {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .note-title {
-    margin-bottom: 0.5rem;
-  }
-  
-  .note-content {
-    margin-top: 0.5rem;
-  }
-  
-  footer {
-    background-color: #f7f7f7;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  #add-note-btn {
-    padding: 0.5rem 1rem;
-    border: none;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .delete-note-btn {
-    margin-left: 1rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    background-color: #dc3545;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-   */ 
-  
    body {
     margin: 0;
-    background: #009578;
+    background: #a2b1c0;
+  }
+  h1 {
+    margin: 30px;
+    font-family: 'Lobster', cursive;
+    /* text-shadow: 5px 0 #FFD3A3; */
+    font-size: 6rem;
+    color: #d5ebee;
   }
   
   #app {
@@ -101,6 +19,7 @@
   }
   
   .note {
+    background: rgb(238, 241, 181);
     height: 200px;
     box-sizing: border-box;
     padding: 16px;
@@ -109,7 +28,7 @@
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
     resize: none;
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 20px;
   }
   
   .add-note {
@@ -128,3 +47,14 @@
     background: rgba(0, 0, 0, 0.2);
   }
   
+  footer {
+    font-size: 30px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    color: #EEEEEE;
+    text-align: right;
+    padding-top: 140px;
+    padding-right: 30px;
+    font-family: 'Indie Flower', cursive;
+  
+  }
